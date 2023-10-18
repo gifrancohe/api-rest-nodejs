@@ -1,0 +1,43 @@
+### Get all movies
+GET http://localhost:1234/movies
+
+### Get a movie by id
+GET http://localhost:1234/movies/241bf55d-b649-4109-af7c-0e6890ded3fc
+
+### Get all movies by genre
+GET http://localhost:1234/movies?genre=Adventure
+
+### Create a movie with POST
+POST http://localhost:1234/movies
+Content-Type: application/json
+
+{
+  "title": "Sonido de libertad",
+  "year": 2015,
+  "director": "Sabados felices",
+  "duration": 162,
+  "poster": "https://i.etsystatic.com/35681979/r/il/dfe3ba/3957859451/il_fullxfull.3957859451_h27r.jpg",
+  "genre": [
+    "Action",
+    "Adventure",
+    "Fantasy"
+  ]
+}
+
+### Update a movie
+PATCH  http://localhost:1234/movies/78504ca9b066d35f2f36193399fafcaa080c406d
+Content-Type: application/json
+
+{
+  "title": "Sonido de libertad",
+  "year": 2023,
+  "director": "James Camaron",
+  "duration": 162,
+  "poster": "https://i.etsystatic.com/35681979/r/il/dfe3ba/3957859451/il_fullxfull.3957859451_h27r.jpg",
+  "genre": [
+    "Sci-Fi",
+    "Adventure",
+    "Fantasy"
+  ],
+  "rate": 9.9
+}

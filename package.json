@@ -1,0 +1,34 @@
+{
+  "name": "class-3",
+  "version": "1.0.0",
+  "description": "Class #3 of the course of nodejs with midudev",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gifrancohe/nodejs.git"
+  },
+  "keywords": [
+    "nodejs",
+    "js",
+    "API",
+    "Rest",
+    "express",
+    "FL0"
+  ],
+  "author": "Giovanny Franco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gifrancohe/nodejs/issues"
+  },
+  "homepage": "https://github.com/gifrancohe/nodejs#readme",
+  "dependencies": {
+    "express": "4.18.2",
+    "zod": "3.22.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
