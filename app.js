@@ -64,6 +64,10 @@ app.patch('/movies/:id', (req, res) => {
   res.status(200).json(updateMovie)
 })
 
+app.get('/', (req, res) => {
+  return res.json({ message: 'Rest API with nodejs and express, running and ready!' })
+})
+
 app.delete('/movies/:id', (req, res) => {
   const { id } = req.params
   const movieIndex = movies.findIndex(movie => movie.id === id)
