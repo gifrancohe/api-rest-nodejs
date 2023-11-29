@@ -106,10 +106,10 @@ app.get('/payments-api/4.0/service.token', (req, res) => {
   const token = tokens.generateUuid()
 
   const jsonResponse = `${callback}({
-    "token": ${token},
+    "token": "${token}",
     "name": "APPROVED",
-    "payer_id": ${payerId},
-    "method": ${method},
+    "payer_id": "${payerId}",
+    "method": "${method}",
     "document": "null"
   })`;
 
